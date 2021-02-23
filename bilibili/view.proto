@@ -10,8 +10,8 @@ syntax = "proto3";
 package bilibili.view;
 
 /** 
-* 弹幕分段设置
-*/
+ * 弹幕分段设置
+ */
 message SegmentConfig {
     // 每段时长（毫秒）
     optional int64 page_size = 1;
@@ -20,8 +20,8 @@ message SegmentConfig {
 }
 
 /** 
-* 暂不清楚作用
-*/
+ * 暂不清楚作用
+ */
 message FlagConfig {
     optional int32 rec_flag = 1;
     optional string rec_text = 2;
@@ -29,8 +29,8 @@ message FlagConfig {
 }
 
 /**
-* 弹幕样式设置
-*/
+ * 弹幕样式设置
+ */
 message WebPlayerConfig {
     // 是否开启弹幕
     optional bool dm_switch = 1;
@@ -75,8 +75,8 @@ message WebPlayerConfig {
 }
 
 /**
-* 命令弹幕内容
-*/
+ * 命令弹幕内容
+ */
 message CommandDanmaku {
     // 弹幕数字 ID
     optional int64 id = 1;
@@ -101,8 +101,8 @@ message CommandDanmaku {
 }
 
 /**
-* 总设置根节点
-*/
+ * 总设置根节点
+ */
 message Root {
     // 状态，为 1 时视频弹幕被关闭
     optional int32 state = 1;
